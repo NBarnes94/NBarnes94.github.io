@@ -4,9 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Nick Barnes Portfolio</title>
 </head>
 <body>
+
+    <!-- Nav Bar -->
+    <nav id="top" class="sticky-top">
+    <ul class="nav justify-content-end navBar">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#top" id="nameButton">Nick Barnes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#top">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#contact">Get in Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+      <!-- Landing page -->
+      <div class="landingSection">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Nick Barnes</h1>
+            <p class="lead">Web Development Student</p>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <!-- About me -->
+      <div class="about">
+        <h2 id="aboutMe">About Me</h2>
+        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before. Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>
+        <img src="./assets/CaptureOneSession0069.jpg" alt="headShot">
+      </div>
+      <br>
+
+      <!-- Projects -->
+    <div class="projects" id="projects">
+      <div class="card-deck cardDeck">
+        <div class="card cssCreature">
+          <a class="cssCreature" href="https://codepen.io/NBarnes94/pen/QWdoBzN" ><img src="./assets/CSSCreature.PNG" class="card-img-top" alt="CSS Creature"></a>
+        <div class="card-body">
+          <h5 class="card-title">CSS Creature</h5>
+          <p class="card-text">A project used to learn how to arrange items with CSS. Used Gorillaz lead singer 2D as creature inspiration</p>
+        </div>
+      </div>
+      <div class="card staticeLayout">
+        <a class="staticeLayout" href="https://nbarnes94.github.io/staticLayout/"><img src="./assets/staticLayout.PNG" class="card-img-top" alt="staticeLayout"></a>
+        <div class="card-body">
+          <h5 class="card-title">Static Layout</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class="card apiOne">
+        <a class="apiOne" href="https://nbarnes94.github.io/apiProject1/"><img src="./assets/Api1.PNG" class="card-img-top" alt="Pokemon Api"></a>
+        <div class="card-body">
+          <h5 class="card-title">Pokemon API</h5>
+          <p class="card-text">ASIDBFGASDBFASDIFB</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="card-deck cardDeck">
+      <div class="card apiTwo">
+        <a class="apiTwo" href="https://apiproject2-2022c.web.app/"><img src="./assets/api2.PNG" class="card-img-top" alt="Movie API"></a>
+        <div class="card-body">
+          <h5 class="card-title">Movie Suggestions from OMDB API</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class="card blueBadge">
+        <img src="./assets/badges-webdev_blue.png" class="card-img-top" alt="Blue Badge">
+        <div class="card-body">
+          <h5 class="card-title">Blue Badge</h5>
+          <p class="card-text">Coming Soon...</p>
+        </div>
+      </div>
+      <div class="card redBadge">
+        <img src="./assets/badges-webdev_red.png" class="card-img-top" alt="Red Badge">
+        <div class="card-body">
+          <h5 class="card-title">Red Badge</h5>
+          <p class="card-text">Coming Soon...</p>
+        </div>
+      </div>
     
+    </div>
+        <!-- <div id="cssCreature">
+            
+          <img src="./assets/CSSCreature.PNG" alt="2D CSS creature">
+          <img  src="./assets/CSSCreature.PNG" class="rounded float-left" alt="2D Css Creature">
+            </a>
+            <h4>Css Creature</h4>
+            <p>A project used to learn how to arrange items with CSS. Used Gorillaz lead singer 2D as creature inspiration</p>
+        </div>
+
+      <div id="staticLayout">
+          <a class="staticeLayout" href="https://nbarnes94.github.io/staticLayout/">
+          <img src="./assets/staticLayout.PNG" alt="staticeLayout">
+          </a> 
+          <h4>Static Layout</h4>
+          <p></p>
+      </div>
+        <div id="apiOne">
+          <a class="apiOne" href="https://nbarnes94.github.io/apiProject1/">
+          <img src="./assets/Api1.PNG" alt="Pokemon Api">
+          </a>
+          <h4>Pokemon Api</h4>
+              <p></p>
+        </div>
+
+        <div id="apiTwo">
+          <a class="apiTwo" href="https://apiproject2-2022c.web.app/">
+          <img src="./assets/api2.PNG" alt="Movie suggestions">
+          </a>
+          <h4>Omdb Api</h4>
+          <p></p>
+        </div>
+
+      <div id="blueBadge">
+      <a class="blueBadge" disabled>
+        <img src="./assets/badges-webdev_blue.png" alt="Blue Badge">
+      </a>
+      <h4>Blue Badge</h4>
+      <p></p>
+    </div>
+
+    <div id="redBadge">
+      <a class="redBadge" disabled >
+        <img src="./assets/badges-webdev_red.png" alt="redBadge">
+      </a>
+      <h4>Red Badge</h4>
+      <p></p>
+    </div>
+  </div> -->
+      
+    <!-- Contact form-->
+    <div class="contact" id="contact">
+      <h2>Get in contact with me! </h2>
+    <div class="mb-3">
+      <form action="https://formspree.io/f/xzbyejkp"></form>
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Leave me some information on how best to contact you!</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="socials">
+
+    </div>
+  </div>
+      <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

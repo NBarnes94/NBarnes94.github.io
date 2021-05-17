@@ -1,0 +1,77 @@
+body{
+    /* font-family: ; */
+    margin: 0;
+    background-color: #88a9b8;
+background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    /* position:fixed; */
+}
+
+.landingSection{
+    width: 100vw;
+    height: 30vh;
+}
+.jumbotron{
+    height: 42vh;
+}
+.about{
+    height: 90vh;
+}
+.about h2{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 70px;
+    /* position: relative; */
+}
+#aboutMe{
+    margin-top: 20px;
+}
+.about p{
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 50vw;
+}
+.about img{
+    height: 70vh;
+    z-index: 2;
+    margin: 0%;
+    float: right;
+    margin-top: -450px;
+    margin-right: 80px;
+    border-radius: 40px;
+}
+/* .projects{
+    height: 100vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.projects img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 40px;
+    margin: 10px;
+} */
+
+.cardDeck{
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.contact{
+    display: block;
+    justify-content: center;
+    /* width: 100vw; */
+    /* margin-top: 300px; */
+    max-width: 800px;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
