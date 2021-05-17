@@ -1,9 +1,9 @@
 body{
-    /* font-family: ; */
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     background-color: #88a9b8;
 background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    color: rgba(255, 160, 0, 1);
 }
 nav{
     display: flex;
@@ -34,6 +34,7 @@ nav{
     margin-top: 80px;
     margin-left: 20px;
     width: 50vw;
+    font-size: 20px;
 }
 .about img{
     height: 70vh;
@@ -63,6 +64,7 @@ nav{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    color: black;
 }
 
 .contact{
