@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Nick Barnes Portfolio</title>
 </head>
 <body>
 
     <!-- Nav Bar -->
-    <nav id="top" class="sticky-top">
+    <nav  class="sticky-top">
     <ul class="nav justify-content-end navBar">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#top" id="nameButton">Nick Barnes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#top">Home</a>
+          <a class="nav-link" href="#top" id="homeButton">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
@@ -31,7 +32,7 @@
     </nav>
 
       <!-- Landing page -->
-      <div class="landingSection">
+      <div class="landingSection" id="top">
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <h1 class="display-4">Nick Barnes</h1>
@@ -44,13 +45,14 @@
       <!-- About me -->
       <div class="about">
         <h2 id="aboutMe">About Me</h2>
-        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before. Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>
+        <p>Currently enrolled in Eleven Fifty's web development boot camp. I am a passionate and creatively minded individual who thrives in a collaborative environment. With experience in Adobe Photoshop and  premiere I have particularly enjoyed the design focused projects. </p>
         <img src="./assets/CaptureOneSession0069.jpg" alt="headShot">
       </div>
       <br>
 
       <!-- Projects -->
     <div class="projects" id="projects">
+      <h2 id="projectsHeader">Projects</h2>
       <div class="card-deck cardDeck">
         <div class="card cssCreature">
           <a class="cssCreature" href="https://codepen.io/NBarnes94/pen/QWdoBzN" ><img src="./assets/CSSCreature.PNG" class="card-img-top" alt="CSS Creature"></a>
@@ -63,14 +65,14 @@
         <a class="staticeLayout" href="https://nbarnes94.github.io/staticLayout/"><img src="./assets/staticLayout.PNG" class="card-img-top" alt="staticeLayout"></a>
         <div class="card-body">
           <h5 class="card-title">Static Layout</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text">A recreation of KAST's homepage including button animation and functionality</p>
         </div>
       </div>
       <div class="card apiOne">
         <a class="apiOne" href="https://nbarnes94.github.io/apiProject1/"><img src="./assets/Api1.PNG" class="card-img-top" alt="Pokemon Api"></a>
         <div class="card-body">
           <h5 class="card-title">Pokemon API</h5>
-          <p class="card-text">ASIDBFGASDBFASDIFB</p>
+          <p class="card-text">My first time working with an API. This build uses the pokemon API and displays the name and picture of each pokemon according to their pokedex number</p>
         </div>
       </div>
       </div>
@@ -80,7 +82,7 @@
         <a class="apiTwo" href="https://apiproject2-2022c.web.app/"><img src="./assets/api2.PNG" class="card-img-top" alt="Movie API"></a>
         <div class="card-body">
           <h5 class="card-title">Movie Suggestions from OMDB API</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text">This API uses a key to create fetch requests. Using the IMDB database I curated 61 movie suggestions, when you click on a button it returns a random recommendation based on the genera.</p>
         </div>
       </div>
       <div class="card blueBadge">
@@ -97,73 +99,35 @@
           <p class="card-text">Coming Soon...</p>
         </div>
       </div>
-    
-    </div>
-        <!-- <div id="cssCreature">
-            
-          <img src="./assets/CSSCreature.PNG" alt="2D CSS creature">
-          <img  src="./assets/CSSCreature.PNG" class="rounded float-left" alt="2D Css Creature">
-            </a>
-            <h4>Css Creature</h4>
-            <p>A project used to learn how to arrange items with CSS. Used Gorillaz lead singer 2D as creature inspiration</p>
-        </div>
-
-      <div id="staticLayout">
-          <a class="staticeLayout" href="https://nbarnes94.github.io/staticLayout/">
-          <img src="./assets/staticLayout.PNG" alt="staticeLayout">
-          </a> 
-          <h4>Static Layout</h4>
-          <p></p>
-      </div>
-        <div id="apiOne">
-          <a class="apiOne" href="https://nbarnes94.github.io/apiProject1/">
-          <img src="./assets/Api1.PNG" alt="Pokemon Api">
-          </a>
-          <h4>Pokemon Api</h4>
-              <p></p>
-        </div>
-
-        <div id="apiTwo">
-          <a class="apiTwo" href="https://apiproject2-2022c.web.app/">
-          <img src="./assets/api2.PNG" alt="Movie suggestions">
-          </a>
-          <h4>Omdb Api</h4>
-          <p></p>
-        </div>
-
-      <div id="blueBadge">
-      <a class="blueBadge" disabled>
-        <img src="./assets/badges-webdev_blue.png" alt="Blue Badge">
-      </a>
-      <h4>Blue Badge</h4>
-      <p></p>
-    </div>
-
-    <div id="redBadge">
-      <a class="redBadge" disabled >
-        <img src="./assets/badges-webdev_red.png" alt="redBadge">
-      </a>
-      <h4>Red Badge</h4>
-      <p></p>
-    </div>
-  </div> -->
-      
-    <!-- Contact form-->
-    <div class="contact" id="contact">
-      <h2>Get in contact with me! </h2>
-    <div class="mb-3">
-      <form action="https://formspree.io/f/xzbyejkp"></form>
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Leave me some information on how best to contact you!</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <div class="socials">
-
     </div>
   </div>
+      
+    <!-- Contact form-->
+     <div class="contact" id="contact"> 
+    <h2>Get into Contact with me!</h2>
+    <form action="https://formspree.io/f/xzbyejkp" method="POST">
+      <input  class="form-control" type="text" name="name"
+          size="50" placeholder=" Your Name*"><br>
+      <input class="form-control" type="email" name="_replyto"
+          size="50" placeholder=" Your Email*"><br>
+      <input class="form-control" type="text" name="message"
+          size="50" placeholder=" Your Message*"><br>
+      <input style="background-color:rgba(255, 160, 0, 1);" class="btn btn-secondary btn-lg" type="submit"
+          value="Send">
+  </form>
+    </div>
+    <div class="socialsHead"> 
+    <h2>Take a look at my work.</h2>
+    </div>
+    <div class="socials">  
+      <br>
+      <a href="./assets/f0c4ae4a82824a751f108eaee0e36614.png" download><i class="fa fa-file icons" style="font-size:180px;color:rgba(255, 160, 0, 1)"></i></a>
+      <a href="https://github.com/NBarnes94" target="_blank"><i class="fa fa-github icons" style="font-size:200px;color:rgba(255, 160, 0, 1)"></i></a>
+
+      <a href="https://www.linkedin.com/in/nick-barnes-069013112" target="_blank"><i class="fa fa-linkedin-square icons" style="font-size:200px;color:rgba(255, 160, 0, 1)"></i></a>
+
+    </div>
+ 
       <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>

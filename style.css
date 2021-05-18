@@ -9,6 +9,16 @@ nav{
     display: flex;
     justify-content: flex-end;
     /* position:fixed; */
+    color: rgba(255, 160, 0, 1);
+    text-decoration: none;
+    background-color: rgba(124, 124, 124, .85);
+    font: bold;
+}
+nav a:hover{
+    color: blue;
+}
+.nav a{
+    color: rgba(255, 160, 0, 1);
 }
 
 .landingSection{
@@ -18,14 +28,26 @@ nav{
 .jumbotron{
     height: 42vh;
 }
+.container h1{
+    font-size: 100px;
+}
+.container p{
+    font-size: 50px;
+}
+
 .about{
     height: 90vh;
 }
 .about h2{
     margin-top: 10px;
     margin-left: 40px;
+    padding-left: 20px;
     font-size: 70px;
+    transition-duration: 0.3s;
     /* position: relative; */
+}
+.about h2:hover{
+    transform: scale(1.05);
 }
 #aboutMe{
     margin-top: 20px;
@@ -35,6 +57,7 @@ nav{
     margin-left: 20px;
     width: 50vw;
     font-size: 20px;
+    text-shadow: 2px 2px rgba(0, 0, 0, .5);
 }
 .about img{
     height: 70vh;
@@ -45,12 +68,17 @@ nav{
     margin-right: 80px;
     border-radius: 40px;
 }
-/* .projects{
-    height: 100vh;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+#projectsHeader{
+    font-size: 80px;
+    text-align: center;
 }
+.projects{
+    margin-bottom: 300px;
+}
+.projects h2{
+    margin-bottom: 60px;
+}
+/*
 .projects img{
     width: 300px;
     height: 500px;
@@ -76,4 +104,36 @@ nav{
     float: center;
     margin-left: auto;
     margin-right: auto;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 30px;
+    border: solid 5px;
+    margin-bottom: 300px;
+}
+#contact{
+    padding: 20px;
+}
+form input{
+    height: 40px;
+    font-size: 13pt;
+}
+.socialsHead{
+    /* font-size: 800px; */
+    text-align: center;
+    margin-bottom: 100px;
+}
+.socialsHead h2{
+    font-size: 80px;
+}
+
+.socials{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+}
+.icons{
+    height: 70px;
+    margin: 0 180px;
 }
