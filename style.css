@@ -4,6 +4,8 @@ body{
     background-color: #88a9b8;
 background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
     color: rgba(255, 160, 0, 1);
+    position: absolute;
+    overflow-x:auto;
 }
 nav{
     display: flex;
@@ -27,6 +29,7 @@ nav a:hover{
 }
 .jumbotron{
     height: 42vh;
+    /* width: 100vw; */
 }
 .container h1{
     font-size: 100px;
@@ -34,12 +37,17 @@ nav a:hover{
 .container p{
     font-size: 50px;
 }
-
+.aboutBox{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 70vh;
+}
 .about{
-    height: 90vh;
+    height: 50vh;
+    margin-left: 50px;
 }
 .about h2{
-    margin-top: 10px;
+    margin-top: 40px;
     margin-left: 40px;
     padding-left: 20px;
     font-size: 70px;
@@ -50,7 +58,7 @@ nav a:hover{
     transform: scale(1.05);
 }
 #aboutMe{
-    margin-top: 20px;
+    margin-top: 100px;
 }
 .about p{
     margin-top: 80px;
@@ -59,14 +67,20 @@ nav a:hover{
     font-size: 20px;
     text-shadow: 2px 2px rgba(0, 0, 0, .5);
 }
-.about img{
+.photo{
+    height: 30vh;
+}
+.photo img{
     height: 70vh;
     z-index: 2;
     margin: 0%;
-    float: right;
-    margin-top: -450px;
+    /* float: right; */
+    margin-top: -50px;
+    /* margin-left: 60px; */
+    justify-content: right;
     margin-right: 80px;
     border-radius: 40px;
+    /* position:relative; */
 }
 #projectsHeader{
     font-size: 80px;
@@ -132,8 +146,35 @@ form input{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 300px;
+ }
+/* .icons{
+    height: 30px; 
+} */
+/* .icons i{
+    height: 60px;
+    margin: 0 160px;
+} */
+
+
+/* .labels{
+    margin-top: 10px;
+    font-size: 10px;
+    width: 10px;
+} */
+.footer{
+    height: 40px;
+    background-color: rgba(255, 160, 0, 1);
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    margin-bottom: 0;
+    font: bold;
 }
-.icons{
-    height: 70px;
-    margin: 0 180px;
-}
+/* #foot{
+    display: flex;
+    font-size: larger;
+    align-items: center;
+} */

@@ -33,7 +33,7 @@
 
       <!-- Landing page -->
       <div class="landingSection" id="top">
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron ">
           <div class="container">
             <h1 class="display-4">Nick Barnes</h1>
             <p class="lead">Web Development Student</p>
@@ -43,33 +43,34 @@
       <br>
 
       <!-- About me -->
+      <div class="aboutBox">
       <div class="about">
         <h2 id="aboutMe">About Me</h2>
-        <p>Currently enrolled in Eleven Fifty's web development boot camp. I am a passionate and creatively minded individual who thrives in a collaborative environment. With experience in Adobe Photoshop and  premiere I have particularly enjoyed the design focused projects. </p>
-        <img src="./assets/CaptureOneSession0069.jpg" alt="headShot">
+        <p>I graduated with a bachelor of special studies in theatre from Cornell College in 2016. Currently enrolled in Eleven Fifty's web development boot camp. I am a passionate and creatively minded individual who thrives in a collaborative environment. With experience in Adobe Photoshop and  premiere I have particularly enjoyed the design focused projects that I have done. If you would like to know more please fill out the contact form below.</p>
       </div>
-      <br>
+      <div class="photo"><img src="./assets/CaptureOneSession0069.jpg" alt="headShot"></div>
+      </div>
 
       <!-- Projects -->
     <div class="projects" id="projects">
       <h2 id="projectsHeader">Projects</h2>
       <div class="card-deck cardDeck">
         <div class="card cssCreature">
-          <a class="cssCreature" href="https://codepen.io/NBarnes94/pen/QWdoBzN" ><img src="./assets/CSSCreature.PNG" class="card-img-top" alt="CSS Creature"></a>
+          <a class="cssCreature" href="https://codepen.io/NBarnes94/pen/QWdoBzN" target="_blank" ><img src="./assets/CSSCreature.PNG" class="card-img-top" alt="CSS Creature"></a>
         <div class="card-body">
           <h5 class="card-title">CSS Creature</h5>
           <p class="card-text">A project used to learn how to arrange items with CSS. Used Gorillaz lead singer 2D as creature inspiration</p>
         </div>
       </div>
       <div class="card staticeLayout">
-        <a class="staticeLayout" href="https://nbarnes94.github.io/staticLayout/"><img src="./assets/staticLayout.PNG" class="card-img-top" alt="staticeLayout"></a>
+        <a class="staticeLayout" href="https://nbarnes94.github.io/staticLayout/" target="_blank" ><img src="./assets/staticLayout.PNG" class="card-img-top" alt="staticeLayout"></a>
         <div class="card-body">
           <h5 class="card-title">Static Layout</h5>
           <p class="card-text">A recreation of KAST's homepage including button animation and functionality</p>
         </div>
       </div>
       <div class="card apiOne">
-        <a class="apiOne" href="https://nbarnes94.github.io/apiProject1/"><img src="./assets/Api1.PNG" class="card-img-top" alt="Pokemon Api"></a>
+        <a class="apiOne" href="https://nbarnes94.github.io/apiProject1/" target="_blank" ><img src="./assets/Api1.PNG" class="card-img-top" alt="Pokemon Api"></a>
         <div class="card-body">
           <h5 class="card-title">Pokemon API</h5>
           <p class="card-text">My first time working with an API. This build uses the pokemon API and displays the name and picture of each pokemon according to their pokedex number</p>
@@ -79,7 +80,7 @@
 
       <div class="card-deck cardDeck">
       <div class="card apiTwo">
-        <a class="apiTwo" href="https://apiproject2-2022c.web.app/"><img src="./assets/api2.PNG" class="card-img-top" alt="Movie API"></a>
+        <a class="apiTwo" href="https://apiproject2-2022c.web.app/" target="_blank" ><img src="./assets/api2.PNG" class="card-img-top" alt="Movie API"></a>
         <div class="card-body">
           <h5 class="card-title">Movie Suggestions from OMDB API</h5>
           <p class="card-text">This API uses a key to create fetch requests. Using the IMDB database I curated 61 movie suggestions, when you click on a button it returns a random recommendation based on the genera.</p>
@@ -121,14 +122,38 @@
     </div>
     <div class="socials">  
       <br>
-      <a href="./assets/f0c4ae4a82824a751f108eaee0e36614.png" download><i class="fa fa-file icons" style="font-size:180px;color:rgba(255, 160, 0, 1)"></i></a>
-      <a href="https://github.com/NBarnes94" target="_blank"><i class="fa fa-github icons" style="font-size:200px;color:rgba(255, 160, 0, 1)"></i></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+           <a href="./assets/f0c4ae4a82824a751f108eaee0e36614.png" download><i class="fa fa-file icons resume" style="font-size:180px;color:rgba(255, 160, 0, 1); margin-top: 26px;"></i></a>
+           <p class="labels" style="font-size: 40px;" >Resume</p>
+          </div>
+          <div class="col-sm">
+            <a href="https://github.com/NBarnes94" target="_blank"><i class="fa fa-github icons" style="font-size:200px;color:rgba(255, 160, 0, 1)"></i></a>
+            <p class="labels" style="font-size: 40px;" >Github</p>
+          </div>
+          <div class="col-sm">
+            <a href="https://www.linkedin.com/in/nick-barnes-069013112" target="_blank"><i class="fa fa-linkedin-square icons" style="font-size:200px;color:rgba(255, 160, 0, 1)"></i></a>
+            <p class="labels" style="font-size: 40px;" >Linkedin</p>
+          </div>
+        </div>
+      </div>
 
-      <a href="https://www.linkedin.com/in/nick-barnes-069013112" target="_blank"><i class="fa fa-linkedin-square icons" style="font-size:200px;color:rgba(255, 160, 0, 1)"></i></a>
+      
+
 
     </div>
  
       <!-- Footer -->
+      <footer>
+        <ul class="footer">
+            <!-- <li id="foot">Created by Nick Barnes</li> -->
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" font-size= '7px' >Created by Nick Barnes &#169;2021</a>
+            </li>
+          </ul>
+    </footer>
+      <!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>
