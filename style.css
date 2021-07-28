@@ -39,7 +39,7 @@ nav a:hover{
 .aboutBox{
     display:flex;
     justify-content: space-between;
-    margin-bottom: 70vh;
+    margin-bottom: 50vh;
 }
 .about{
     height: 50vh;
@@ -144,4 +144,30 @@ form input{
     justify-content:flex-end;
     margin-bottom: 0;
     font: bold;
+}
+
+.skills{
+    /* display: flex;
+    justify-content: center; */
+    margin-bottom: 40vh;
+}
+
+#skillHeader{
+    font-size: 80px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.skillIcons{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillText{
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 50px;
 }
